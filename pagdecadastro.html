@@ -127,7 +127,7 @@
         <h1>Chegou a hora de criar sua conta!</h1>
     </header>    
     <main>
-        <form class="Login" onsubmit="window.location.href='pg02.html'; return false;" autocomplete="on">
+        <form autocomplete="on" onsubmit="enviarFormulario(event)">
             <div id="tudo">
                 <label id="nom" for="inome">Nome Completo: </label>
                 <input type="text" name="nome" id="inome" required minlength="0" maxlength="12" placeholder="Seu nome completo"> <br>
@@ -148,5 +148,12 @@
             
         </form>
     </main>
+
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();
+            window.location.href = "pg02.html";
+        }
+        </script>
 </body>
 </html>

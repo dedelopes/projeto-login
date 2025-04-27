@@ -18,7 +18,7 @@
     <main>
         
         <div class="tela-login">
-            <form class="Login" action="pg02.html" method="post" autocomplete="on">
+            <form class="Login" autocomplete="on" onsubmit="enviarFormulario(event)">
                 <label class="imail" for="imail"> Seu e-mail: </label> <br>
                     <input class="email" type="email" name="email" id="imail" required placeholder="Seu e-mail aqui"> <br>
                 <label class="isenha" for="isenha"> Sua senha: </label> <br>
@@ -30,6 +30,14 @@
             </form>
         </div>
 
-    </main>   
+    </main> 
+    
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault(); // Evita envio real
+            // Aqui você poderia fazer validações se quiser
+            window.location.href = "pg02.html"; // Redireciona manualmente
+        }
+        </script>
 </body>
 </html>
