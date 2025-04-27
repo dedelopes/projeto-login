@@ -115,6 +115,19 @@
             align-items: center;
         }
 
+        div#fim > a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: black;
+            border: 2px solid rgba(0, 0, 0, 0.884);
+            padding: 5px;
+            background-color: white;
+            margin-top: 10px;
+            font-size: 1.2em;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
  
 
 
@@ -127,7 +140,7 @@
         <h1>Chegou a hora de criar sua conta!</h1>
     </header>    
     <main>
-        <form action="pg02.html" method="post" autocomplete="on">
+        <form onsubmit="return redirecionar();">
             <div id="tudo">
                 <label id="nom" for="inome">Nome Completo: </label>
                 <input type="text" name="nome" id="inome" required minlength="0" maxlength="12" placeholder="Seu nome completo"> <br>
@@ -146,10 +159,14 @@
                     </div>
             </div>
             
-
-
-
         </form>
     </main>
+
+    <script>
+        function redirecionar() {
+          window.location.href = "pg02.html";
+          return false;
+        }
+    </script>
 </body>
 </html>
