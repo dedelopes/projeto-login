@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagens/icons8-login-32 (1).png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Faça seu cadastro gratuitamente!</h1>
+        <menu>
+            <a href="pagdecadastro.html">Não possui uma conta? <strong>Cadastre-se aqui</strong></a>
+            <a href="https://www.instagram.com/dede.lopes_9?igsh=c2x3YTRpbWRvNWE5&utm_source=qr" target="_blank">Fale Comigo!</a>
+        </menu>
+    </header> 
+    <main>
+        
+        <div class="tela-login">
+            <form class="Login" action="pg02.html" method="post" autocomplete="on">
+                <label class="imail" for="imail"> Seu e-mail: </label> <br>
+                    <input class="email" type="email" name="email" id="imail" required placeholder="Seu e-mail aqui"> <br>
+                <label class="isenha" for="isenha"> Sua senha: </label> <br>
+                    <input class="senha" type="password" name="senha" id="isenha" minlength="0" maxlength="8" placeholder="Mínimo 8 letras" required> <br>
+                <div id="final">
+                    <input id="envio" type="submit" value="Enviar">
+                    <input id="res" type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+
+    </main>   
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="shortcut icon" href="imagens/icons8-login-32 (1).png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: linear-gradient(#4334E0, #6B36E0);
+            background-repeat: no-repeat;
+            height: 94.8vh
+        }
+
+        header h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+            text-decoration: underline;
+            
+        }
+
+        form {
+            display: flex;
+            padding-top: 120px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        label#nom {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.315);
+            padding: 10px;
+        }
+
+        input#inome {
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.644);
+            border: none;
+        }
+
+        label#ema {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.315);
+            padding: 10px;  
+        }
+
+        input#iimail {
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.644);
+            border: none;    
+        }
+
+        label#sen {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.315);
+            padding: 10px;           
+        }
+
+        input#isenha {
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.644);
+            border: none;   
+        }
+
+        div#sexo {
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.315);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        input#envio {
+            font-size: 1.2em;
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        input#limpo {
+            font-size: 1.2em;
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        div#tudo {
+            border: 5px solid rgba(255, 255, 255, 0.075);
+            box-shadow: 5px 5px 45px white;
+            border-radius: 20px;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+ 
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chegou a hora de criar sua conta!</h1>
+    </header>    
+    <main>
+        <form action="pg02.html" method="post" autocomplete="on">
+            <div id="tudo">
+                <label id="nom" for="inome">Nome Completo: </label>
+                <input type="text" name="nome" id="inome" required minlength="0" maxlength="12" placeholder="Seu nome completo"> <br>
+                <label id="ema" for="iimail">Seu e-mail: </label>
+                <input type="email" name="email" id="iimail" required placeholder="Seu endereço de e-mail"> <br>
+                <label id="sen" for="isenha">Sua senha: </label>
+                <input type="password" name="senha" id="isenha" required minlength="0" maxlength="8" placeholder="Senha de usuário"> <br>
+                <div id="sexo">
+                    <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label>
+                    <input type="radio" name="sexo" id="ifem" checked value="F"> <label for="ifem">Feminino</label>
+                </div> <br>
+                
+                    <div id="fim">
+                        <input id="envio" type="submit" value="Enviar">
+                        <input id="limpo" type="reset" value="Limpar">
+                    </div>
+            </div>
+            
+
+
+
+        </form>
+    </main>
+</body>
+</html>
