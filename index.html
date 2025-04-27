@@ -17,28 +17,21 @@
     </header> 
     <main>
         
-        <div class="tela-login">
-            <form onsubmit="return redirecionar();">
-
-                <label class="imail" for="imail"> Seu e-mail: </label> <br>
-                    <input class="email" type="email" name="email" id="imail" required placeholder="Seu e-mail aqui"> <br>
-                <label class="isenha" for="isenha"> Sua senha: </label> <br>
-                    <input class="senha" type="password" name="senha" id="isenha" minlength="0" maxlength="8" placeholder="Mínimo 8 letras" required> <br>
-                <div id="final">
-                    <input id="envio" type="submit" value="Enviar">
-                    <input id="res" type="reset" value="Limpar">
-                </div>
-            </form>
-        </div>
+        <form method="get">
+            <div class="tela-login">
+                    <label class="imail" for="imail"> Seu e-mail: </label> <br>
+                        <input class="email" type="email" name="email" id="imail" required placeholder="Seu e-mail aqui"> <br>
+                    <label class="isenha" for="isenha"> Sua senha: </label> <br>
+                        <input class="senha" type="password" name="senha" id="isenha" minlength="0" maxlength="8" placeholder="Mínimo 8 letras" required> <br>
+                    <div id="final">
+                        <input id="envio" type="submit" value="Enviar">
+                        <input id="res" type="reset" value="Limpar">
+                    </div>
+            
+            </div>
+        </form>
 
     </main> 
     
-    <script>
-        function redirecionar() {
-          // Aqui você pode validar os campos se quiser
-          window.location.href = "pg02.html";
-          return false; // impede o envio real do formulário
-        }
-    </script>
 </body>
 </html>

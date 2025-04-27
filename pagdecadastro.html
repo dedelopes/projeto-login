@@ -140,33 +140,29 @@
         <h1>Chegou a hora de criar sua conta!</h1>
     </header>    
     <main>
-        <form onsubmit="return redirecionar();">
-            <div id="tudo">
-                <label id="nom" for="inome">Nome Completo: </label>
-                <input type="text" name="nome" id="inome" required minlength="0" maxlength="12" placeholder="Seu nome completo"> <br>
-                <label id="ema" for="iimail">Seu e-mail: </label>
-                <input type="email" name="email" id="iimail" required placeholder="Seu endereço de e-mail"> <br>
-                <label id="sen" for="isenha">Sua senha: </label>
-                <input type="password" name="senha" id="isenha" required minlength="0" maxlength="8" placeholder="Senha de usuário"> <br>
-                <div id="sexo">
-                    <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label>
-                    <input type="radio" name="sexo" id="ifem" checked value="F"> <label for="ifem">Feminino</label>
-                </div> <br>
+        
+            <form method="get">
+                <div id="tudo">
+                    <label id="nom" for="inome">Nome Completo: </label>
+                    <input type="text" name="nome" id="inome" required minlength="0" maxlength="12" placeholder="Seu nome completo"> <br>
+                    <label id="ema" for="iimail">Seu e-mail: </label>
+                    <input type="email" name="email" id="iimail" required placeholder="Seu endereço de e-mail"> <br>
+                    <label id="sen" for="isenha">Sua senha: </label>
+                    <input type="password" name="senha" id="isenha" required minlength="0" maxlength="8" placeholder="Senha de usuário"> <br>
+                    <div id="sexo">
+                        <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">Masculino</label>
+                        <input type="radio" name="sexo" id="ifem" checked value="F"> <label for="ifem">Feminino</label>
+                    </div> <br>
                 
-                    <div id="fim">
-                        <input id="envio" type="submit" value="Enviar">
-                        <input id="limpo" type="reset" value="Limpar">
-                    </div>
-            </div>
+                        <div id="fim">
+                            <input id="envio" type="submit" value="Enviar">
+                            <input id="limpo" type="reset" value="Limpar">
+                        </div>
+                </div>
+            </form>
             
-        </form>
+        
     </main>
 
-    <script>
-        function redirecionar() {
-          window.location.href = "pg02.html";
-          return false;
-        }
-    </script>
 </body>
 </html>
