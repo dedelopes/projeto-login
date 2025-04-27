@@ -127,7 +127,7 @@
         <h1>Chegou a hora de criar sua conta!</h1>
     </header>    
     <main>
-        <form autocomplete="on" onsubmit="enviarFormulario(event)">
+        <form onsubmit="return redirecionar();">
             <div id="tudo">
                 <label id="nom" for="inome">Nome Completo: </label>
                 <input type="text" name="nome" id="inome" required minlength="0" maxlength="12" placeholder="Seu nome completo"> <br>
@@ -150,10 +150,11 @@
     </main>
 
     <script>
-        function enviarFormulario(event) {
-            event.preventDefault();
-            window.location.href = "pg02.html";
+        function redirecionar() {
+          // aqui você pode validar os campos se quiser
+          window.location.href = "pg02.html";
+          return false; // impede o envio real
         }
-        </script>
+      </script>
 </body>
 </html>
